@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/451eb02a28.js" crossorigin="anonymous"></script>
+
+    <script>
+        // JavaScript to show the popup window on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'flex';
+        });
+        
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
+
+</head>
+<body>
+    <nav>
+    <div class="navdiv">
+    <div class="ealogonav"><a><img src="./imges/bmw.png" alt="" srcset="" width="50px"></a></div>
+    <ul>
+        <li><a href="#oddil">Úvod</a></li>
+        <li><a href="#oddil2">Moje vysněná auta</a></li>
+        <li><a href="#oddil3">O autech</a></li>
+    </ul>
+    </div>
+    </nav>
+    <header><h1>Davidova Garáž</h1></header>
+    <main>
+        <section id="oddil"><div id="logoea"></div><div class="uvod"><h2>Úvod</h2> <p>Tady vám povím něco víc o autech</p></div></section>
+        <section id="oddil2"><div id="micro"></div><div class="mikrotransakce"><h2>Moje vysněná auta</h2>
+            <p>BMW je známé pro své sportovní sedanové modely, Porsche je specialista na výrobu luxusních sportovních vozů a Mercedes-Benz se zaměřuje na luxusní automobily s vysokým výkonem a komfortem.</p></div></section>
+        <section id="oddil3"><div id="scemetary"></div><div class="hrbitov"><h2>O autech</h2>
+            <p>auta jsou super</p>
+            <p>co vic na to ricrt</p></div></section>
+
+            <section id="galerie">
+                <h1>galerka</h1>
+                <div class="gallery-container">
+                  <img src="./imges/Jablko.jpg" alt="Image 1">
+                  <img src="./imges/Jablko.jpg" alt="Image 2">
+                  <img src="./imges/Jablko.jpg" alt="Image 3">
+                  <img src="./imges/Jablko.jpg" alt="Image 4">
+                  <img src="./imges/Jablko.jpg" alt="Image 5">
+                </div>
+              </section>       
+    </main>
+
+
+    <div id="popup" class="popup-container">
+        <div class="popup-content">
+            <h1>Odběr newsletteru:</h1>
+            <form action="">
+                <input type="text" placeholder="E-mail">
+                <a class="gradient-button" href="index.html">Odeslat</a>
+                <input type="checkbox" required>Souhlasím se <a href="">zpracováním osobní údajů</a>
+            </form>
+            <button onclick="closePopup()"><i class="fa-solid fa-times"></i></button>
+        </div>
+    </div>
+
+
+    <footer>
+        <h1>Odběr newsletteru:</h1>
+        <form action="">
+            <input type="text" placeholder="E-mail">
+            <button><i class="fa-solid fa-check"></i></button>
+            <input type="checkbox" required>Souhlasím se <a href="">zpracováním osobního weedu</a>
+        </form>
+
+
+
+        <br><br>
+        &copy; 2023 David Račan & Assets: Jan Marinka
+    </footer>
+</body>
+</html>
